@@ -1,0 +1,100 @@
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .card {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 360px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  position: absolute;
+}
+
+
+
+.container .card .star {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  
+}
+
+.container .card .title {
+  font-size: 25px;
+}
+
+.container .card .paragraph {
+  color: hsl(217, 12%, 63%);
+  margin: 18px 0;
+  line-height: 25px;
+}
+
+.container .card .list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container .card .list .list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .card .list .list-item:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.container .card .list .list-item:focus{
+    background-color:  hsl(0, 0%, 100%);
+    color: #000000;
+}
+
+.container .card .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.container .card .btn:hover{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank-you .selected {
+  color: hsl(25, 97%, 53%);
+  font-size: 14px;
+  margin: 20px 0 35px;
+}
+
+.thank-you.show {
+  display: none;
+}
